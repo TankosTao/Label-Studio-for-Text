@@ -1,13 +1,18 @@
 # Quick usage
 
-For quick usage run docker-compose in your working directory:
+```python
+from mobile_sam import sam_model_registry, SamAutomaticMaskGenerator, SamPredictor
 
-```bash
-docker-compose up -d
+model_type = "vit_t"
+sam_checkpoint = "./textsam.pth"
+
+device = "cuda" if torch.cuda.is_available() else "cpu"
+
+textsam = sam_model_registry[model_type](checkpoint=sam_checkpoint)
+textsam.to(device=device)
+textsam.eval()
+
+predictor = SamPredictor(textsam)
+predictor.set_image(<your_image>)
+masks, _, _ = predictor.predict(<input_prompts>)
 ```
-
-# Reference to tutorial
-
-See the tutorial in the documentation for building your own image and advanced usage:
-
-https://github.com/heartexlabs/label-studio/blob/master/docs/source/tutorials/object-detector.md
