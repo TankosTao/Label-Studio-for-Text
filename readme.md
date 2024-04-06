@@ -51,13 +51,13 @@ device=cpu
 
 ## 创建项目
 
-![创建项目](docs/创建项目.gif)
+![创建项目](https://github.com/TankosTao/Label-Studio-for-Text/tree/master/docs/创建项目.gif)
 
 
 ## 启动深度学习后端服务
 
-![启动服务](docs/启动服务.gif)
+![启动服务](https://github.com/TankosTao/Label-Studio-for-Text/tree/master/docs/启动服务.gif)
 
 ## 自动标注和交互式标注
 
-![自动标注和交互式标注](docs/自动标注和交互式标注.gif)
+![自动标注和交互式标注](https://github.com/TankosTao/Label-Studio-for-Text/tree/master/docs/自动标注和交互式标注.gif)
