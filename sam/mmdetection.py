@@ -182,7 +182,7 @@ class MMDetection(LabelStudioMLBase):
         predictor = self.PREDICTOR
 
         results = []
-        assert len(tasks) == 1
+        # assert len(tasks) == 1
         task = tasks[0]
         image_url = self._get_image_url(task)
         image_path = self.get_local_path(image_url)
